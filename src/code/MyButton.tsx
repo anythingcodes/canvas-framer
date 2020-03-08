@@ -11,11 +11,15 @@ export function Button(props) {
     const StyledFrame = styled.div`
         background-color: fuchsia;
         color: black;
-        ${props => props.primary && css`
+        ${props =>
+            props.primary &&
+            css`
             color: white;
             background-color: green;
         `}
-        ${props => props.secondary && css`
+        ${props =>
+            props.secondary &&
+            css`
             color: white;
             background-color: blue;
         `}
