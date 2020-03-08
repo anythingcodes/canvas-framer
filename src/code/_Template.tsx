@@ -1,5 +1,5 @@
 import * as React from "react";
-import { PropertyControls, ControlType } from "framer";
+import { Frame, addPropertyControls, ControlType } from "framer"
 
 export enum EnumTypes {
   enum = "red",
@@ -37,60 +37,68 @@ interface Props {
    is not displayed on the components panel.
 */
 
-class Template extends React.Component<Props> {
+export function Template(props) {
   // Set default properties
-  static defaultProps = {
-    boolean: false,
-    color: "#FAFAFA",
-    image: "",
-    fusedNumber: 4,
-    number: 50,
-    string: "",
-    size: "md",
-    type: "red",
-
-    /* Initialize the width and height of the component */
-    width: 100,
-    height: 40
-  };
-
-  // Items shown in property panel
-  static propertyControls: PropertyControls = {
-    string: { type: ControlType.String, title: "String" },
-    enum: {
-      type: ControlType.Enum,
-      options: ["blue", "red", "green", "yellow"],
-      optionTitles: ["Blue", "Red", "Green"],
-      title: "Style"
-    },
-    segmentedEnum: {
-      type: ControlType.SegmentedEnum,
-      options: ["xs", "sm", "md", "lg"],
-      optionTitles: ["XS", "SM", "MD", "LG"],
-      title: "Segmented Enum"
-    },
-    boolean: { type: ControlType.Boolean, title: "Boolean" },
-    number: { type: ControlType.Number, title: "Number" },
-    fusedNumber: {
-      type: ControlType.FusedNumber,
-      toggleKey: "paddingPerSide",
-      toggleTitles: ["Padding", "Padding per Side"],
-      valueKeys: ["paddingTop", "paddingRight", "paddingBottom", "paddingLeft"],
-      valueLabels: ["T", "R", "B", "L"],
-      min: 0,
-      title: "Fused Number"
-    },
-    color: { type: ControlType.Color, title: "Tint" }
-  };
-
-  render() {
-    const { width, height } = this.props;
-
-    return {
-      /* Include new component here 
-        Add {...props} as props to inherit all props defined in this document
-        <ComponentName {...props} />
-        */
-    };
-  }
+  const { text, tint, ...rest } = props;
+  return (
+    <Frame
+        {...rest}
+        background={tint}
+        whileHover={{
+            scale: 1.1,
+        }}
+        style={{
+            color: "#fff",
+            fontSize: 16,
+            fontWeight: 600,
+        }}
+    >
+        {text}
+    </Frame>
+  )
 }
+
+Template.defaultProps = {
+  boolean: false,
+  color: "#FAFAFA",
+  image: "",
+  fusedNumber: 4,
+  number: 50,
+  string: "",
+  size: "md",
+  type: "red",
+
+  /* Initialize the width and height of the component */
+  width: 100,
+  height: 40
+};
+
+// Items shown in property panel
+// Learn more: https://framer.com/api/property-controls/
+addPropertyControls(Template, {
+  string: { type: ControlType.String, title: "String" },
+  enum: {
+    type: ControlType.Enum,
+    options: ["blue", "red", "green", "yellow"],
+    optionTitles: ["Blue", "Red", "Green"],
+    title: "Style"
+  },
+  segmentedEnum: {
+    type: ControlType.SegmentedEnum,
+    options: ["xs", "sm", "md", "lg"],
+    optionTitles: ["XS", "SM", "MD", "LG"],
+    title: "Segmented Enum"
+  },
+  boolean: { type: ControlType.Boolean, title: "Boolean" },
+  number: { type: ControlType.Number, title: "Number" },
+  fusedNumber: {
+    type: ControlType.FusedNumber,
+    toggleKey: "paddingPerSide",
+    toggleTitles: ["Padding", "Padding per Side"],
+    valueKeys: ["paddingTop", "paddingRight", "paddingBottom", "paddingLeft"],
+    valueLabels: ["T", "R", "B", "L"],
+    min: 0,
+    title: "Fused Number"
+  },
+  color: { type: ControlType.Color, title: "Tint" }
+})

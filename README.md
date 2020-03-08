@@ -1,7 +1,10 @@
 # Framer X Build System
+
+> **Note:** Optimized for Framer X v50.
+
 <img width="1439" alt="screen shot 2018-08-30 at 3 18 12 pm" src="https://user-images.githubusercontent.com/1121873/44874068-f9f51e80-ac67-11e8-928f-8821212e9cdb.png">
 
-This repository contains a build system to transpile React components into a self-contained library for use in Framer X. This was built in order to bridge the gap between the components used in design and their counterparts in production.
+This repository contains a build system to transpile React components into a self-contained library for use in Framer X. This was built in order to bridge the gap between the components used in design and their counterparts in production. Components are styled via styled-components.
 
 ### Installation
 
