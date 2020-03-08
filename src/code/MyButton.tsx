@@ -1,6 +1,6 @@
 import * as React from "react"
 import styled, { css } from "styled-components"
-import { Frame, addPropertyControls, ControlType } from "framer"
+import { addPropertyControls, ControlType } from "framer"
 
 // Open Preview: Command + P
 // Learn more: https://framer.com/api
@@ -31,11 +31,6 @@ export function Button(props) {
             whileHover={{
                 scale: 1.1,
             }}
-            // style={{
-            //     color: "#fff",
-            //     fontSize: 16,
-            //     fontWeight: 600,
-            // }}
         >
             {text}
         </StyledFrame>
