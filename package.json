@@ -1,0 +1,52 @@
+{
+  "name": "framer-x-build-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "dev": "yarn clean && webpack --colors --env dev",
+    "watch": "yarn dev -w",
+    "test": "mocha --require babel-register --colors ./test/*.spec.js",
+    "test:watch": "mocha --require babel-register --colors -w ./test/*.spec.js",
+    "clean": "rm -rf lib/",
+    "build": "yarn clean && webpack --env build && yarn sync:lib",
+    "sync:lib": "zip -d design-system.framerx lib/* && zip -ur design-system.framerx lib",
+    "sync:src": "unzip -o design-system.framerx design/* code/* -d src/",
+    "sync:framerx": "cp _base.framerx design-system.framerx && zip -ur design-system.framerx lib/* && cd src/ && zip -ur ../design-system.framerx code/* design/* && cd ..",
+    "precommit": "yarn sync:src"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.51",
+    "@babel/core": "^7.0.0-rc.3",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-rc.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0-rc.3",
+    "@babel/preset-env": "^7.0.0-beta.51",
+    "@babel/preset-react": "^7.0.0-rc.2",
+    "@types/react": "16.4.7",
+    "awesome-typescript-loader": "^5.2.0",
+    "babel-eslint": "^8.0.3",
+    "babel-loader": "^8.0.0-beta.4",
+    "babel-preset-env": "^7.0.0-beta.3",
+    "babel-register": "^7.0.0-beta.3",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "husky": "^0.14.3",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "prop-types": "15.6.0",
+    "react": "15.6.1",
+    "style-loader": "^0.23.0",
+    "typescript": "2.x",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "^4.12.2",
+    "webpack-cli": "^3.0.8"
+  },
+  "author": "Datadog DesignOps Team <slack@#designops>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@types/classnames": "^2.2.6",
+    "classnames": "^2.2.6",
+    "framer": "^1.1.7",
+    "styled-components": "^5.0.1"
+  }
+}
