@@ -1,34 +1,19 @@
-import * as React from "react"
 import { Override, Data } from "framer"
 
-// Learn more: https://framer.com/docs/overrides/
-
-const appState = Data({
-    taps: 0,
+const state = Data({
+    termsOk: false,
 })
 
-export function TapFrame(props): Override {
+export function ContinueButton(): Override {
     return {
-        borderRadius: 12,
-        whileTap: {
-            scale: 0.9,
-        },
-        onTap: () => {
-            appState.taps += 1
-        },
+        disabled: !state.termsOk,
     }
 }
 
-export function RotateFrame(props): Override {
+export function TermsCheckbox(): Override {
     return {
-        animate: {
-            rotate: appState.taps * 90,
+        onValueChange: isChecked => {
+            state.termsOk = isChecked
         },
-    }
-}
-
-export function TextElement(props): Override {
-    return {
-        text: appState.taps,
     }
 }
