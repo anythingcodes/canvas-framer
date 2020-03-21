@@ -44,6 +44,8 @@ Button.defaultProps = {
 
 // Learn more: https://framer.com/api/property-controls/
 addPropertyControls(Button, {
+    // Text-wrapping L10N, width limits, think about multi-line
+    // Enum for BG themes & font color
     text: {
         title: "Text",
         type: ControlType.String,

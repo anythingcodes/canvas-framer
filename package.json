@@ -10,9 +10,9 @@
     "test:watch": "mocha --require babel-register --colors -w ./test/*.spec.js",
     "clean": "rm -rf lib/",
     "build": "yarn clean && webpack --env build && yarn sync:lib",
-    "sync:lib": "zip -d design-system.framerx lib/* && zip -ur design-system.framerx lib",
-    "sync:src": "unzip -o design-system.framerx design/* code/* -d src/",
-    "sync:framerx": "cp _base.framerx design-system.framerx && zip -ur design-system.framerx lib/* && cd src/ && zip -ur ../design-system.framerx code/* design/* && cd ..",
+    "sync:lib": "zip -d canvas.framerx lib/* && zip -ur canvas.framerx lib",
+    "sync:src": "unzip -o canvas.framerx design/* code/* -d src/",
+    "sync:framerx": "cp _base.framerx canvas.framerx && zip -ur canvas.framerx lib/* && cd src/ && zip -ur ../canvas.framerx code/* design/* && cd ..",
     "precommit": "yarn sync:src"
   },
   "devDependencies": {
