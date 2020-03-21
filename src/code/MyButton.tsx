@@ -1,6 +1,6 @@
 import * as React from "react"
 import styled, { css } from "styled-components"
-import { addPropertyControls, ControlType } from "framer"
+import { Frame, addPropertyControls, ControlType } from "framer"
 
 // Open Preview: Command + P
 // Learn more: https://framer.com/api
@@ -31,6 +31,11 @@ export function Button(props) {
             whileHover={{
                 scale: 1.1,
             }}
+            // style={{
+            //     color: "#fff",
+            //     fontSize: 16,
+            //     fontWeight: 600,
+            // }}
         >
             {text}
         </StyledFrame>
@@ -40,12 +45,12 @@ export function Button(props) {
 Button.defaultProps = {
     height: 128,
     width: 240,
+    // Can add margin, padding, etc.
+    // Force conversation & collaboration
 }
 
 // Learn more: https://framer.com/api/property-controls/
 addPropertyControls(Button, {
-    // Text-wrapping L10N, width limits, think about multi-line
-    // Enum for BG themes & font color
     text: {
         title: "Text",
         type: ControlType.String,
