@@ -6226,7 +6226,7 @@
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/Checkbox.tsx_Checkbox",
                 "codeComponentProps" : {
-                  "checked" : true,
+                  "checked" : false,
                   "textLabel" : "I accept the terms and conditions."
                 },
                 "codeOverrideEnabled" : true,
