@@ -11,9 +11,9 @@ export function Header(props) {
 }
 
 Header.defaultProps = {
-    height: 128,
-    width: 240,
-    title: "Canvas Design System",
+    height: 70,
+    width: 320,
+    title: "Welcome to Canvas",
     headingLevel: "h1",
 }
 
