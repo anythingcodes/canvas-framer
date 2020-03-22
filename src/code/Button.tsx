@@ -2,31 +2,21 @@ import * as React from "react"
 import styled, { css } from "styled-components"
 import { Frame, addPropertyControls, ControlType } from "framer"
 
+const StyledButton = styled.a`
+    background-color: ${props => (props.disabled ? "grey" : "fuchsia")};
+    color: black;
+    cursor: pointer;
+
+    ${props =>
+        props.disabled &&
+        css`
+        opacity: 0.3;
+        pointer-events: none;
+    `}
+`
+
 export function Button(props) {
-    const { textLabel, disabled, theme, ...rest } = props
-
-    const StyledButton = styled.a`
-        background-color: ${disabled ? "grey" : "fuchsia"};
-        color: black;
-        cursor: pointer;
-
-        ${disabled &&
-            css`
-            opacity: 0.3;
-            pointer-events: none;
-        `}
-
-        ${theme === "primary" &&
-            css`
-            color: white;
-            background-color: green;
-        `}
-        ${theme === "secondary" &&
-            css`
-            color: white;
-            background-color: blue;
-        `}
-    `
+    const { textLabel, ...rest } = props
 
     return (
         <StyledButton

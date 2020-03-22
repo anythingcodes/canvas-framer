@@ -14,7 +14,7 @@ export function Checkbox(props) {
         update. If it finds diffs, it will run this function.
     */
     React.useEffect(() => {
-        onValueChange(!isChecked)
+        onValueChange(checked)
         setIsChecked(checked)
     }, [checked])
 
