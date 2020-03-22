@@ -3,6 +3,48 @@ import styled, { css } from "styled-components"
 import { Frame, addPropertyControls, ControlType } from "framer"
 import { IconCheck } from "./canvas"
 
+// TODO: Move screen-reader code to mixin
+const screenReaderOnly = css`
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+`
+
+const CheckboxLabel = styled.label`
+    font-family: 'Avenir Next';
+    border-radius: 3px;
+    border-style: solid;
+    color: #33475B; 
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+    min-height: 100%;
+    border-width: ${props => (props.checked ? "2px" : "1px")};
+    background-color: ${props => (props.checked ? "#F0F9FB" : "white")};
+    border-color: ${props => (props.checked ? "#00A4BD" : "#7FD1DE")};   
+`
+
+const CheckboxWrapper = styled.div`
+        width: 20px;
+        height: 20px;
+        border-radius: 3px;
+        border: 2px solid ${props => (props.checked ? "#00a4bd" : "#cbd6e2")};
+        color: #cbd6e2;
+        position: relative;
+        input[type="checkbox"] {
+            ${screenReaderOnly}
+        }
+    `
+
 export function Checkbox(props) {
     const { checked, onValueChange, textLabel, ...rest } = props
 
@@ -17,49 +59,6 @@ export function Checkbox(props) {
         onValueChange(checked)
         setIsChecked(checked)
     }, [checked])
-
-    const CheckboxLabel = styled.label`
-        font-family: 'Avenir Ne
-        xt';
-        border-radius: 3px;
-        border-style: solid;
-        color: #33475B; 
-        display: flex;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        cursor: pointer;
-        width: 100%;
-        min-height: 100%;
-        border-width: ${isChecked ? "2px" : "1px"};
-        background-color: ${isChecked ? "#F0F9FB" : "white"};
-        border-color: ${isChecked ? "#00A4BD" : "#7FD1DE"};   
-    `
-
-    // TODO: Move screen-reader code to mixin
-    const screenReaderOnly = css`
-        position: absolute;
-        top: 0;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        padding: 0;
-        overflow: hidden;
-        clip: rect(0,0,0,0);
-        border: 0;
-    `
-
-    const CheckboxWrapper = styled.div`
-        width: 20px;
-        height: 20px;
-        border-radius: 3px;
-        border: 2px solid ${isChecked ? "#00a4bd" : "#cbd6e2"};
-        color: #cbd6e2;
-        position: relative;
-        input[type="checkbox"] {
-            ${screenReaderOnly}
-        }
-    `
 
     const toggleIsChecked = () => {
         onValueChange(!isChecked)
