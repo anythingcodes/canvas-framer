@@ -10,6 +10,8 @@ export const colors = Object.freeze({
     "Calypso Dark": "var(--token-a9276b5e-5494-45e6-8a1d-be0e45f03fa9, rgb(0, 145, 174))",
     /** #7FD1DE */
     "Calypso Medium": "var(--token-6c154961-3ee6-4233-b73f-acaa7f9e1a42, rgb(127, 209, 222))",
+    /** #E5F5F8 */
+    "Calypso Light": "var(--token-d5e3c66f-4616-4fb8-b74e-5f9813a6fad1, rgb(229, 245, 248))",
     /** #FF7A59 */
     "Lorax": "var(--token-8dcda1f8-fed2-4b5a-890b-1a6a0d46c0ab, rgb(255, 122, 89))",
     /** #E66E50 */

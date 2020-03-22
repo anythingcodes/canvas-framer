@@ -1,26 +1,14 @@
 import * as React from "react"
 import styled, { css } from "styled-components"
 import { Frame, addPropertyControls, ControlType } from "framer"
-import { IconCheck } from "./canvas"
-
-// TODO: Move screen-reader code to mixin
-const screenReaderOnly = css`
-    position: absolute;
-    top: 0;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    border: 0;
-`
+import { IconCheck, colors } from "./canvas"
+import utils from "./Utils"
 
 const CheckboxLabel = styled.label`
     font-family: 'Avenir Next';
     border-radius: 3px;
     border-style: solid;
-    color: #33475B; 
+    color: ${colors.Obsidian}; 
     display: flex;
     align-items: center;
     display: flex;
@@ -28,20 +16,32 @@ const CheckboxLabel = styled.label`
     cursor: pointer;
     width: 100%;
     min-height: 100%;
-    border-width: ${props => (props.checked ? "2px" : "1px")};
-    background-color: ${props => (props.checked ? "#F0F9FB" : "white")};
-    border-color: ${props => (props.checked ? "#00A4BD" : "#7FD1DE")};   
+    border-width: ${({ checked }) => (checked ? "2px" : "1px")};
+    background-color: ${({ checked }) =>
+        checked ? colors["Calypso Light"] : colors.Olaf};
+    border-color: ${({ checked }) =>
+        checked ? colors.Calypso : colors["Calypso Medium"]}; 
+    transition: all .15s ease-out;
+    ${({ checked }) => css`
+        box-shadow: 0 0 0 1px ${colors.Calypso};
+    `}
+    &:hover {
+        box-shadow: 0 0 0 1px ${
+            colors["Calypso Medium"]
+        }, 0 0 12px 0 rgba(0,163,189,.3);
+    }  
 `
 
 const CheckboxWrapper = styled.div`
         width: 20px;
         height: 20px;
         border-radius: 3px;
-        border: 2px solid ${props => (props.checked ? "#00a4bd" : "#cbd6e2")};
-        color: #cbd6e2;
+        border: 2px solid ${props =>
+            props.checked ? colors.Calypso : colors.Battleship};
+        color: ${colors.Battleship};
         position: relative;
         input[type="checkbox"] {
-            ${screenReaderOnly}
+            ${utils.screenReaderStyles}
         }
     `
 
@@ -66,7 +66,7 @@ export function Checkbox(props) {
     }
 
     return (
-        <CheckboxLabel {...rest} onChange={toggleIsChecked}>
+        <CheckboxLabel {...rest} checked={isChecked} onChange={toggleIsChecked}>
             {/* TODO: Label/input for/id */}
             <CheckboxWrapper>
                 {isChecked && <IconCheck />}
@@ -82,8 +82,6 @@ Checkbox.defaultProps = {
     width: 380,
     checked: false,
     onValueChange: (isChecked: boolean) => {},
-    // Can add margin, padding, etc.
-    // Force conversation & collaboration
 }
 
 addPropertyControls(Checkbox, {
