@@ -5,6 +5,7 @@ const state = Data({
 })
 
 export function ContinueButton(): Override {
+    console.log(`ContinueButton disabled?: ${!state.termsOk}`)
     return {
         disabled: !state.termsOk,
     }

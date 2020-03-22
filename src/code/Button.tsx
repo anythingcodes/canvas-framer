@@ -8,6 +8,13 @@ export function Button(props) {
     const StyledButton = styled.a`
         background-color: ${disabled ? "grey" : "fuchsia"};
         color: black;
+        cursor: pointer;
+
+        ${disabled &&
+            css`
+            opacity: 0.3;
+            pointer-events: none;
+        `}
 
         ${theme === "primary" &&
             css`
@@ -53,5 +60,10 @@ addPropertyControls(Button, {
         title: "Label",
         type: ControlType.String,
         defaultValue: "Hello Framer!",
+    },
+    disabled: {
+        title: "Disabled",
+        type: ControlType.Boolean,
+        defaultValue: false,
     },
 })

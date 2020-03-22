@@ -13,7 +13,10 @@ export function Checkbox(props) {
         value of every dep against thevalue from its last
         update. If it finds diffs, it will run this function.
     */
-    React.useEffect(() => setIsChecked(checked), [checked])
+    React.useEffect(() => {
+        onValueChange(!isChecked)
+        setIsChecked(checked)
+    }, [checked])
 
     const CheckboxLabel = styled.label`
         font-family: 'Avenir Ne
