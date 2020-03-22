@@ -2,31 +2,24 @@ import * as React from "react"
 import styled, { css } from "styled-components"
 import { Frame, addPropertyControls, ControlType } from "framer"
 
-// Open Preview: Command + P
-// Learn more: https://framer.com/api
+const StyledButton = styled.a`
+    background-color: ${props => (props.disabled ? "grey" : "fuchsia")};
+    color: black;
+    cursor: pointer;
+
+    ${props =>
+        props.disabled &&
+        css`
+        opacity: 0.3;
+        pointer-events: none;
+    `}
+`
 
 export function Button(props) {
-    const { text, ...rest } = props
-
-    const StyledFrame = styled.div`
-        background-color: fuchsia;
-        color: black;
-        ${props =>
-            props.primary &&
-            css`
-            color: white;
-            background-color: green;
-        `}
-        ${props =>
-            props.secondary &&
-            css`
-            color: white;
-            background-color: blue;
-        `}
-    `
+    const { textLabel, ...rest } = props
 
     return (
-        <StyledFrame
+        <StyledButton
             {...rest}
             whileHover={{
                 scale: 1.1,
@@ -37,23 +30,30 @@ export function Button(props) {
             //     fontWeight: 600,
             // }}
         >
-            {text}
-        </StyledFrame>
+            {textLabel}
+        </StyledButton>
     )
 }
 
 Button.defaultProps = {
     height: 128,
     width: 240,
+    textLabel: "Read More",
+
     // Can add margin, padding, etc.
     // Force conversation & collaboration
 }
 
 // Learn more: https://framer.com/api/property-controls/
 addPropertyControls(Button, {
-    text: {
-        title: "Text",
+    textLabel: {
+        title: "Label",
         type: ControlType.String,
         defaultValue: "Hello Framer!",
+    },
+    disabled: {
+        title: "Disabled",
+        type: ControlType.Boolean,
+        defaultValue: false,
     },
 })
