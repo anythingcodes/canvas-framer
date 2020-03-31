@@ -4,6 +4,9 @@ import { Frame, addPropertyControls, ControlType } from "framer"
 import { IconCheck, colors } from "./canvas"
 import utils from "./Utils"
 
+// TODO: Transfer controller code to this file
+//import { controller } from "./App";
+
 const CheckboxLabel = styled.label`
     font-family: 'Avenir Next';
     border-radius: 3px;

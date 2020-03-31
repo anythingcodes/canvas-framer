@@ -22,6 +22,9 @@ const StyledButton = styled.button`
     -moz-osx-font-smoothing: auto;
     font-smoothing: auto;
     text-shadow: 0 0 1px transparent;
+    &.hidden {
+        opacity: 0;
+    }
     &:hover {
         background-color: ${colors.BUTTON_PRIMARY_HOVER_FILL};
     }
@@ -39,14 +42,12 @@ const StyledButton = styled.button`
 `
 
 export function Button(props) {
-    const { textLabel, ...rest } = props
+    const { textLabel, additionalClassName, ...rest } = props
 
     return (
         <StyledButton
+            className={additionalClassName}
             {...rest}
-            whileHover={{
-                scale: 1.1,
-            }}
             // style={{
             //     color: "#fff",
             //     fontSize: 16,
