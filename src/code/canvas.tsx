@@ -92,4 +92,6 @@ export const colors = Object.freeze({
     "Gypsum": "var(--token-dd81b82b-208a-4af0-b2bf-f258c9604893, rgb(245, 248, 250))",
     /** #FFFFFF */
     "Olaf": "var(--token-ccda4d7f-1b4a-44b7-8f8a-bd408fff8e2d, rgb(255, 255, 255))",
+    /** #FF8F73 */
+    "BUTTON_PRIMARY_HOVER_FILL": "var(--token-49cc8783-cb9c-4e0a-8aec-cfc802d79287, rgb(255, 143, 115))",
 })

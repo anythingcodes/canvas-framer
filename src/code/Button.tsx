@@ -1,11 +1,37 @@
 import * as React from "react"
 import styled, { css } from "styled-components"
 import { Frame, addPropertyControls, ControlType } from "framer"
+import { colors } from "./canvas"
 
-const StyledButton = styled.a`
-    background-color: ${props => (props.disabled ? "grey" : "fuchsia")};
-    color: black;
+const StyledButton = styled.button`
+    font-family: 'AvenirNext-DemiBold';
+    color: ${colors.Olaf};
+    background-color: ${colors.Lorax};
+    display: inline-block;
+    border-radius: 3px;
     cursor: pointer;
+    padding: 12px 24px;
+    line-height: 1;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: all .15s ease-out;
+    -webkit-appearance: button;
+    border-radius: .1875rem;
+    border: 1px solid ${colors.Lorax};
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+    font-smoothing: auto;
+    text-shadow: 0 0 1px transparent;
+    &.hidden {
+        opacity: 0;
+    }
+    &:hover {
+        background-color: ${colors.BUTTON_PRIMARY_HOVER_FILL};
+    }
+    &:active {
+        background-color: ${colors["Lorax Dark"]};
+        border-color: ${colors["Lorax Dark"]};
+    }
 
     ${props =>
         props.disabled &&
@@ -16,14 +42,12 @@ const StyledButton = styled.a`
 `
 
 export function Button(props) {
-    const { textLabel, ...rest } = props
+    const { textLabel, additionalClassName, ...rest } = props
 
     return (
         <StyledButton
+            className={additionalClassName}
             {...rest}
-            whileHover={{
-                scale: 1.1,
-            }}
             // style={{
             //     color: "#fff",
             //     fontSize: 16,
@@ -36,9 +60,9 @@ export function Button(props) {
 }
 
 Button.defaultProps = {
-    height: 128,
-    width: 240,
-    textLabel: "Read More",
+    height: 44,
+    width: 112,
+    textLabel: "Continue",
 
     // Can add margin, padding, etc.
     // Force conversation & collaboration
@@ -49,7 +73,7 @@ addPropertyControls(Button, {
     textLabel: {
         title: "Label",
         type: ControlType.String,
-        defaultValue: "Hello Framer!",
+        defaultValue: "Next",
     },
     disabled: {
         title: "Disabled",

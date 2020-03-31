@@ -4,6 +4,9 @@ import { Frame, addPropertyControls, ControlType } from "framer"
 import { IconCheck, colors } from "./canvas"
 import utils from "./Utils"
 
+// TODO: Transfer controller code to this file
+//import { controller } from "./App";
+
 const CheckboxLabel = styled.label`
     font-family: 'Avenir Next';
     border-radius: 3px;
@@ -51,12 +54,12 @@ export function Checkbox(props) {
     const [isChecked, setIsChecked] = React.useState(checked)
 
     /*
-        Each time component updates, Readt will compare the
-        value of every dep against thevalue from its last
+        Each time component updates, React will compare the
+        value of every dep against the value from its last
         update. If it finds diffs, it will run this function.
     */
     React.useEffect(() => {
-        onValueChange(checked)
+        //onValueChange(checked)
         setIsChecked(checked)
     }, [checked])
 
