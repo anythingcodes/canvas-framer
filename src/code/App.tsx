@@ -1,82 +1,44 @@
 import { Override, Data } from "framer"
-import { FlowController } from "framer-controller"
+//import { FlowController } from "framer-controller"
+import { useSwitch } from "@framer/tishogeorgiev.switch"
+
+// Switch
 
 // Checkbox
+/*
 const state = Data({
-    termsOk: false,
-})
+  termsOk: false,
+})*/
 
 export const ContinueButton: Override = props => {
+    //const controls = useSwitch()
+
     return {
-        disabled: !state.termsOk,
-        additionalClassName:
-            controller.current >= controller.pagesTotal - 1
-                ? "hidden"
-                : "visible",
+        //disabled: !state.termsOk,
         onClick: () => {
             // TODO: Remove button on last page or allow func to be overridden
             // TODO: Add previous button and wizard steps (prev not on controller.root)
-            if (controller.current >= controller.pagesTotal - 1) {
-                return
-            }
-            controller.showNext(controller.current + 1)
+            //console.log(controls.getSwitches())
         },
     }
 }
 
 export const PreviousButton: Override = props => {
+    //const controls = useSwitch()
+
     return {
-        additionalClassName: controller.root ? "hidden" : "visible",
+        //additionalClassName: controller.root ? "hidden" : "visible",
         onClick: () => {
-            controller.showPrevious()
+            // console.log("prev")
+            //controls.setSwitchState("sharedStep", 1)
         },
     }
 }
 
-export function TermsCheckbox(): Override {
+/*export function TermsCheckbox(): Override {
     return {
         onValueChange: isChecked => {
             state.termsOk = isChecked
         },
     }
-}
-
-// Steps flow
-export const controller = new FlowController()
-
-export const Flow: Override = props => {
-    controller.connect(props)
-    return {
-        ...controller.state,
-        variants: {
-            // Old page moves from current to behind
-            behind: {
-                y: "0%",
-                filter: "brightness(50%)",
-                transition: {
-                    //type: "spring"
-                    ease: [0.23, -0.04, 0.31, 1.01],
-                    duration: 1.36,
-                },
-            },
-            // Component's current page
-            current: {
-                y: "0%",
-                filter: "brightness(100%)",
-                transition: {
-                    ease: [0.23, -0.04, 0.31, 1.01],
-                    duration: 1.36,
-                },
-            },
-            // When navigate to a page, next page moves from ahead to current
-            ahead: {
-                y: "100%",
-                filter: "brightness(100%)",
-                transition: {
-                    ease: [0.23, -0.04, 0.31, 1.01],
-                    duration: 1.28,
-                },
-            },
-        },
-    }
-}
+}*/
