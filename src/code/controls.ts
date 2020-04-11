@@ -7,6 +7,7 @@ export const gestureEventNames = ["onDoubleTap", "onLongPress"]
 export const eventTriggerNames = [
     ...automaticEventTriggerNames,
     "onTap",
+    "onClick",
     "onTapStart",
     "onTapCancel",
     "onHoverStart",
@@ -26,6 +27,7 @@ export const isCustomEvent = (name: string) => {
 
 export const eventTriggerTitles = {
     onTap: "On Tap",
+    onClick: "On Click",
     onTapStart: "Tap Start",
     onTapCancel: "Tap Cancel",
     afterDelay: "After Delay",
@@ -56,6 +58,7 @@ export const eventTriggerTitles = {
 export const eventTriggerProps = [
     "afterDelay",
     "onTap",
+    "onClick",
     "onTapStart",
     "onTapCancel",
     "onHoverStart",
@@ -68,6 +71,7 @@ export const eventTriggerProps = [
     "onKeyUp",
     "afterDelayAction",
     "onTapAction",
+    "onClickAction",
     "onTapStartAction",
     "onTapCancelAction",
     "onHoverStartAction",
@@ -80,6 +84,7 @@ export const eventTriggerProps = [
     "onKeyUpAction",
     "afterDelaySpecificIndex",
     "onTapSpecificIndex",
+    "onClickSpecificIndex",
     "onTapStartSpecificIndex",
     "onTapCancelSpecificIndex",
     "onHoverStartSpecificIndex",
@@ -92,6 +97,7 @@ export const eventTriggerProps = [
     "onKeyUpSpecificIndex",
     "afterDelaySpecificName",
     "onTapSpecificName",
+    "onClickSpecificName",
     "onTapStartSpecificName",
     "onTapCancelSpecificName",
     "onHoverStartSpecificName",
