@@ -2,7 +2,7 @@ import * as React from "react"
 import styled, { css } from "styled-components"
 import { Frame, addPropertyControls, ControlType } from "framer"
 import { IconCheck, colors } from "./canvas"
-import utils from "./Utils"
+//import utils from "./Utils"
 
 // TODO: Transfer controller code to this file
 //import { controller } from "./App";
@@ -43,11 +43,11 @@ const CheckboxWrapper = styled.div`
             props.checked ? colors.Calypso : colors.Battleship};
         color: ${colors.Battleship};
         position: relative;
-        input[type="checkbox"] {
-            ${utils.screenReaderStyles}
-        }
+        
     `
-
+/*input[type="checkbox"] {
+            ${utils.screenReaderStyles}
+        }*/
 export function Checkbox(props) {
     const { checked, onValueChange, textLabel, ...rest } = props
 
