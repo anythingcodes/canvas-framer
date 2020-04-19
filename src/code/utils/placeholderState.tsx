@@ -1,6 +1,6 @@
 import * as React from "react"
 import { CSSProperties } from "react"
-import { Theme, parseColor } from "../../../base"
+import { Theme, parseColor } from "framer-base"
 import { Stack, Color } from "framer"
 
 interface Props {

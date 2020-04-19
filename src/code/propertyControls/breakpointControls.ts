@@ -1,4 +1,4 @@
-import { capitalize } from "../../../base"
+import { capitalize } from "framer-base"
 import { ControlType, PropertyControls } from "framer"
 
 export function breakpointControls(breakpoints: {

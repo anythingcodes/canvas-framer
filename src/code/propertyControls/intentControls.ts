@@ -1,4 +1,4 @@
-import { intents, capitalize } from "../../../base"
+import { intents, capitalize } from "framer-base"
 import { ControlType, PropertyControls } from "framer"
 
 export function intentControls(

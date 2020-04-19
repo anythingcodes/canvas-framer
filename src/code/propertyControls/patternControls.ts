@@ -1,4 +1,4 @@
-import { patterns, capitalize } from "../../../base"
+import { patterns, capitalize } from "framer-base"
 import { ControlType, PropertyControls } from "framer"
 
 export function patternControls(

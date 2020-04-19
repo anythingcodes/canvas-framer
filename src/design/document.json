@@ -37318,6 +37318,190 @@
             "visible" : true,
             "width" : 1440,
             "widthType" : 0
+          },
+          {
+            "__class" : "CodeComponentNode",
+            "aspectRatio" : null,
+            "bottom" : null,
+            "centerAnchorX" : 0.22673611111111111,
+            "centerAnchorY" : 0.45833333333333331,
+            "children" : [
+
+            ],
+            "clip" : true,
+            "codeComponentIdentifier" : ".\/Miscellaneous\/Icon.tsx_Icon",
+            "codeComponentPackageVersion" : null,
+            "codeComponentProps" : {
+              "circle" : true,
+              "name" : "Battery"
+            },
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "deviceType" : null,
+            "duplicatedFromId" : ".\/Miscellaneous\/Icon.tsx_Icon",
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255,255,255,1)",
+            "fillEnabled" : false,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "height" : 255,
+            "heightType" : 0,
+            "id" : "u59PSqdiz",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "lastDuplicatedFromId" : ".\/Miscellaneous\/Icon.tsx_Icon",
+            "left" : 142,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "DPI1w3NyX",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "right" : null,
+            "rotation" : 0,
+            "top" : 285,
+            "visible" : true,
+            "width" : 369,
+            "widthType" : 0
+          },
+          {
+            "__class" : "CodeComponentNode",
+            "aspectRatio" : null,
+            "bottom" : null,
+            "centerAnchorX" : 0,
+            "centerAnchorY" : 0,
+            "children" : [
+
+            ],
+            "clip" : true,
+            "codeComponentIdentifier" : "@framer\/charliewilliams.framer-base-kit\/.\/Miscellaneous\/Icon.tsx_Icon",
+            "codeComponentPackageVersion" : "1.0.0",
+            "codeComponentProps" : {
+              "canvasSize" : true,
+              "circle" : true,
+              "icon" : "Framer",
+              "intent" : "primary",
+              "pattern" : "tertiary",
+              "size" : 24,
+              "theme" : "dark"
+            },
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "deviceType" : null,
+            "duplicatedFromId" : "@framer\/charliewilliams.framer-base-kit\/.\/Miscellaneous\/Icon.tsx_Icon",
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255,255,255,1)",
+            "fillEnabled" : false,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "height" : 24,
+            "heightType" : 0,
+            "id" : "XdxoUj0Eh",
+            "intrinsicHeight" : 24,
+            "intrinsicWidth" : 24,
+            "lastDuplicatedFromId" : "@framer\/charliewilliams.framer-base-kit\/.\/Miscellaneous\/Icon.tsx_Icon",
+            "left" : 813,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "DPI1w3NyX",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "right" : null,
+            "rotation" : 0,
+            "top" : 679,
+            "visible" : true,
+            "width" : 24,
+            "widthType" : 0
+          },
+          {
+            "__class" : "CodeComponentNode",
+            "aspectRatio" : null,
+            "bottom" : null,
+            "centerAnchorX" : 0,
+            "centerAnchorY" : 0,
+            "children" : [
+
+            ],
+            "clip" : true,
+            "codeComponentIdentifier" : "@framer\/framer.base\/.\/Miscellaneous\/Icon.tsx_Icon",
+            "codeComponentPackageVersion" : "1.1.0",
+            "codeComponentProps" : {
+              "canvasSize" : true,
+              "circle" : true,
+              "icon" : "Framer",
+              "intent" : "primary",
+              "pattern" : "primary",
+              "size" : 24,
+              "theme" : "light"
+            },
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "deviceType" : null,
+            "duplicatedFromId" : "@framer\/framer.base\/.\/Miscellaneous\/Icon.tsx_Icon",
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255,255,255,1)",
+            "fillEnabled" : false,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "height" : 24,
+            "heightType" : 0,
+            "id" : "ptdnonXX1",
+            "intrinsicHeight" : 24,
+            "intrinsicWidth" : 24,
+            "lastDuplicatedFromId" : "@framer\/framer.base\/.\/Miscellaneous\/Icon.tsx_Icon",
+            "left" : 1112,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "DPI1w3NyX",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "right" : null,
+            "rotation" : 0,
+            "top" : 366,
+            "visible" : true,
+            "width" : 24,
+            "widthType" : 0
           }
         ],
         "clip" : true,
@@ -37903,6 +38087,15 @@
                   "type" : "unstyled"
                 }
               ],
+              "cached" : {
+                "html" : "<div data-offset-key=\"8utu2-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"8utu2-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:16px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">Last Step<\/span><\/span><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 19,
+                  "width" : 70
+                },
+                "width" : 0
+              },
               "entityMap" : {
 
               }
@@ -40738,6 +40931,15 @@
                   "type" : "unstyled"
                 }
               ],
+              "cached" : {
+                "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"6m1oh-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6m1oh-0-0\" style=\"tab-size:4;font-family:&quot;AvenirNext-DemiBold&quot;, &quot;Avenir Next&quot;, serif;-webkit-text-fill-color:rgb(51, 71, 91);font-size:11px;letter-spacing:0px;line-height:1.2;font-weight:600\"><span data-text=\"true\">PARTY<\/span><\/span><\/div><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 13,
+                  "width" : 35
+                },
+                "width" : 0
+              },
               "entityMap" : {
 
               }
@@ -40817,6 +41019,15 @@
                   "type" : "unstyled"
                 }
               ],
+              "cached" : {
+                "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"cqmq1-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"cqmq1-0-0\" style=\"tab-size:4;font-family:&quot;AvenirNext-DemiBold&quot;, &quot;Avenir Next&quot;, serif;-webkit-text-fill-color:rgb(51, 71, 91);font-size:11px;letter-spacing:0px;line-height:1.2;font-weight:600\"><span data-text=\"true\">START<\/span><\/span><\/div><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 13,
+                  "width" : 34
+                },
+                "width" : 0
+              },
               "entityMap" : {
 
               }
@@ -40896,6 +41107,15 @@
                   "type" : "unstyled"
                 }
               ],
+              "cached" : {
+                "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"93d7r-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"93d7r-0-0\" style=\"tab-size:4;font-family:&quot;AvenirNext-DemiBold&quot;, &quot;Avenir Next&quot;, serif;-webkit-text-fill-color:rgb(51, 71, 91);font-size:11px;letter-spacing:0px;line-height:1.2;font-weight:600\"><span data-text=\"true\">CONNECT<\/span><\/span><\/div><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 13,
+                  "width" : 56
+                },
+                "width" : 0
+              },
               "entityMap" : {
 
               }
@@ -40975,6 +41195,15 @@
                   "type" : "unstyled"
                 }
               ],
+              "cached" : {
+                "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"d0aql-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"d0aql-0-0\" style=\"tab-size:4;font-family:&quot;AvenirNext-DemiBold&quot;, &quot;Avenir Next&quot;, serif;-webkit-text-fill-color:rgb(51, 71, 91);font-size:11px;letter-spacing:0px;line-height:1.2;font-weight:600\"><span data-text=\"true\">VERIFY<\/span><\/span><\/div><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 13,
+                  "width" : 39
+                },
+                "width" : 0
+              },
               "entityMap" : {
 
               }
@@ -41916,6 +42145,15 @@
                   "type" : "unstyled"
                 }
               ],
+              "cached" : {
+                "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"6m1oh-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6m1oh-0-0\" style=\"tab-size:4;font-family:&quot;AvenirNext-DemiBold&quot;, &quot;Avenir Next&quot;, serif;-webkit-text-fill-color:rgb(51, 71, 91);font-size:11px;letter-spacing:0px;line-height:1.2;font-weight:600\"><span data-text=\"true\">PARTY<\/span><\/span><\/div><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 13,
+                  "width" : 35
+                },
+                "width" : 0
+              },
               "entityMap" : {
 
               }
@@ -41995,6 +42233,15 @@
                   "type" : "unstyled"
                 }
               ],
+              "cached" : {
+                "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"cqmq1-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"cqmq1-0-0\" style=\"tab-size:4;font-family:&quot;AvenirNext-DemiBold&quot;, &quot;Avenir Next&quot;, serif;-webkit-text-fill-color:rgb(51, 71, 91);font-size:11px;letter-spacing:0px;line-height:1.2;font-weight:600\"><span data-text=\"true\">START<\/span><\/span><\/div><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 13,
+                  "width" : 34
+                },
+                "width" : 0
+              },
               "entityMap" : {
 
               }
@@ -42074,6 +42321,15 @@
                   "type" : "unstyled"
                 }
               ],
+              "cached" : {
+                "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"93d7r-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"93d7r-0-0\" style=\"tab-size:4;font-family:&quot;AvenirNext-DemiBold&quot;, &quot;Avenir Next&quot;, serif;-webkit-text-fill-color:rgb(51, 71, 91);font-size:11px;letter-spacing:0px;line-height:1.2;font-weight:600\"><span data-text=\"true\">CONNECT<\/span><\/span><\/div><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 13,
+                  "width" : 56
+                },
+                "width" : 0
+              },
               "entityMap" : {
 
               }
@@ -42153,6 +42409,15 @@
                   "type" : "unstyled"
                 }
               ],
+              "cached" : {
+                "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"d0aql-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"d0aql-0-0\" style=\"tab-size:4;font-family:&quot;AvenirNext-DemiBold&quot;, &quot;Avenir Next&quot;, serif;-webkit-text-fill-color:rgb(51, 71, 91);font-size:11px;letter-spacing:0px;line-height:1.2;font-weight:600\"><span data-text=\"true\">VERIFY<\/span><\/span><\/div><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 13,
+                  "width" : 39
+                },
+                "width" : 0
+              },
               "entityMap" : {
 
               }
@@ -43094,6 +43359,15 @@
                   "type" : "unstyled"
                 }
               ],
+              "cached" : {
+                "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"6m1oh-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6m1oh-0-0\" style=\"tab-size:4;font-family:&quot;AvenirNext-DemiBold&quot;, &quot;Avenir Next&quot;, serif;-webkit-text-fill-color:rgb(51, 71, 91);font-size:11px;letter-spacing:0px;line-height:1.2;font-weight:600\"><span data-text=\"true\">PARTY<\/span><\/span><\/div><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 13,
+                  "width" : 35
+                },
+                "width" : 0
+              },
               "entityMap" : {
 
               }
@@ -43173,6 +43447,15 @@
                   "type" : "unstyled"
                 }
               ],
+              "cached" : {
+                "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"cqmq1-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"cqmq1-0-0\" style=\"tab-size:4;font-family:&quot;AvenirNext-DemiBold&quot;, &quot;Avenir Next&quot;, serif;-webkit-text-fill-color:rgb(51, 71, 91);font-size:11px;letter-spacing:0px;line-height:1.2;font-weight:600\"><span data-text=\"true\">START<\/span><\/span><\/div><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 13,
+                  "width" : 34
+                },
+                "width" : 0
+              },
               "entityMap" : {
 
               }
@@ -43252,6 +43535,15 @@
                   "type" : "unstyled"
                 }
               ],
+              "cached" : {
+                "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"93d7r-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"93d7r-0-0\" style=\"tab-size:4;font-family:&quot;AvenirNext-DemiBold&quot;, &quot;Avenir Next&quot;, serif;-webkit-text-fill-color:rgb(51, 71, 91);font-size:11px;letter-spacing:0px;line-height:1.2;font-weight:600\"><span data-text=\"true\">CONNECT<\/span><\/span><\/div><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 13,
+                  "width" : 56
+                },
+                "width" : 0
+              },
               "entityMap" : {
 
               }
@@ -43331,6 +43623,15 @@
                   "type" : "unstyled"
                 }
               ],
+              "cached" : {
+                "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"d0aql-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"d0aql-0-0\" style=\"tab-size:4;font-family:&quot;AvenirNext-DemiBold&quot;, &quot;Avenir Next&quot;, serif;-webkit-text-fill-color:rgb(51, 71, 91);font-size:11px;letter-spacing:0px;line-height:1.2;font-weight:600\"><span data-text=\"true\">VERIFY<\/span><\/span><\/div><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 13,
+                  "width" : 39
+                },
+                "width" : 0
+              },
               "entityMap" : {
 
               }
@@ -44272,6 +44573,15 @@
                   "type" : "unstyled"
                 }
               ],
+              "cached" : {
+                "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"6m1oh-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6m1oh-0-0\" style=\"tab-size:4;font-family:&quot;AvenirNext-DemiBold&quot;, &quot;Avenir Next&quot;, serif;-webkit-text-fill-color:rgb(51, 71, 91);font-size:11px;letter-spacing:0px;line-height:1.2;font-weight:600\"><span data-text=\"true\">PARTY<\/span><\/span><\/div><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 13,
+                  "width" : 35
+                },
+                "width" : 0
+              },
               "entityMap" : {
 
               }
@@ -44351,6 +44661,15 @@
                   "type" : "unstyled"
                 }
               ],
+              "cached" : {
+                "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"cqmq1-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"cqmq1-0-0\" style=\"tab-size:4;font-family:&quot;AvenirNext-DemiBold&quot;, &quot;Avenir Next&quot;, serif;-webkit-text-fill-color:rgb(51, 71, 91);font-size:11px;letter-spacing:0px;line-height:1.2;font-weight:600\"><span data-text=\"true\">START<\/span><\/span><\/div><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 13,
+                  "width" : 34
+                },
+                "width" : 0
+              },
               "entityMap" : {
 
               }
@@ -44430,6 +44749,15 @@
                   "type" : "unstyled"
                 }
               ],
+              "cached" : {
+                "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"93d7r-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"93d7r-0-0\" style=\"tab-size:4;font-family:&quot;AvenirNext-DemiBold&quot;, &quot;Avenir Next&quot;, serif;-webkit-text-fill-color:rgb(51, 71, 91);font-size:11px;letter-spacing:0px;line-height:1.2;font-weight:600\"><span data-text=\"true\">CONNECT<\/span><\/span><\/div><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 13,
+                  "width" : 56
+                },
+                "width" : 0
+              },
               "entityMap" : {
 
               }
@@ -44509,6 +44837,15 @@
                   "type" : "unstyled"
                 }
               ],
+              "cached" : {
+                "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"d0aql-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"d0aql-0-0\" style=\"tab-size:4;font-family:&quot;AvenirNext-DemiBold&quot;, &quot;Avenir Next&quot;, serif;-webkit-text-fill-color:rgb(51, 71, 91);font-size:11px;letter-spacing:0px;line-height:1.2;font-weight:600\"><span data-text=\"true\">VERIFY<\/span><\/span><\/div><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 13,
+                  "width" : 39
+                },
+                "width" : 0
+              },
               "entityMap" : {
 
               }

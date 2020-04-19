@@ -1,4 +1,4 @@
-import { Theme, themes, capitalize } from "../../../base"
+import { Theme, themes, capitalize } from "framer-base"
 import { ControlType, PropertyControls } from "framer"
 
 export function themeControls(

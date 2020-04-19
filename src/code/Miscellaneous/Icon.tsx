@@ -1,13 +1,26 @@
 import * as React from "react"
-import { useContext } from "react"
-//import { ThemeContext } from "styled-components"
+import {
+    Icon as BaseIcon,
+    IconProps,
+    CircleIcon as BaseCircleIcon,
+    CircleIconProps,
+    themes,
+} from "framer-base"
 import { ControlType, addPropertyControls } from "framer"
-import { IconCheck } from "../canvas"
+import {
+    intentControls,
+    iconControls,
+    patternControls,
+    themeControls,
+} from "../propertyControls"
+import { OmitTheme } from "../utils"
+import withHOC from "../utils/withHOC"
 
-/*type Props = //OmitTheme<IconComponentProps> &
-    //OmitTheme<CircleIconProps> &
+type Props = OmitTheme<IconProps> &
+    OmitTheme<CircleIconProps> &
     Partial<{
         theme: string
+        themeContext: any
         intent: string
         pattern: string
         canvasSize: boolean
@@ -19,63 +32,68 @@ import { IconCheck } from "../canvas"
         icon: string
     }
 
-const defaults: Props = {
+const defaultProps: Props = {
     theme: "light",
     intent: "primary",
     pattern: "primary",
-    icon: "Battery",
+    icon: "Framer",
     canvasSize: true,
     size: 24,
     circle: true,
-    //name: "anchor",
-}*/
-
-export const Icon = ({ name, ...props }) => {
-    //const themeContext = useContext(ThemeContext)
-    //const { width, height, size, ...rest } = props
-    console.log(`received ${name}`)
-    const IconComponent = IconCheck
-    console.log("IconComponent", IconComponent)
-    //const { theme, canvasSize, width, height, size, circle, ...rest } = props
-    //const IconWrapper = circle ? BaseCircleIcon : BaseIcon
-
-    return <IconComponent {...props} />
 }
 
+const InnerIcon: React.FC<Props> = props => {
+    const {
+        theme,
+        themeContext,
+        canvasSize,
+        width,
+        height,
+        size,
+        circle,
+        ...rest
+    } = props
+    const IconWrapper = circle ? BaseCircleIcon : BaseIcon
+
+    return (
+        <IconWrapper
+            {...rest}
+            size={canvasSize ? Math.min(width, height) : size}
+            theme={themeContext || themes[theme]}
+        />
+    )
+}
+
+export const Icon = withHOC(InnerIcon)
+
 Icon.defaultProps = {
-    //...defaults,
-    name: "Battery",
-    //height: defaults.size,
-    //width: defaults.size,
+    ...defaultProps,
+    height: defaultProps.size,
+    width: defaultProps.size,
 }
 
 addPropertyControls(Icon, {
-    circle: {
-        type: ControlType.Boolean,
-        title: "Circle",
-    },
-    name: {
-        type: ControlType.String,
-        defaultValue: "Battery",
-    },
-    //...themeControls(defaults.theme),
-    //...intentControls(defaults.intent),
-    //...patternControls(defaults.pattern, true, "circle"),
-    /*canvasSize: {
+    ...themeControls(defaultProps.theme),
+    ...intentControls(defaultProps.intent),
+    ...patternControls(defaultProps.pattern, true, "circle"),
+    canvasSize: {
         type: ControlType.Boolean,
         title: "Size",
-        defaultValue: defaults.canvasSize,
+        defaultValue: defaultProps.canvasSize,
         enabledTitle: "Canvas",
         disabledTitle: "Manual",
     },
     size: {
         type: ControlType.Number,
         title: " ",
-        defaultValue: defaults.size,
+        defaultValue: defaultProps.size,
         min: 0,
-        hidden: ({ canvasSize }) => canvasSize,
+        hidden: (props: Props) => props.canvasSize,
     },
-    */
-
-    //...iconControls(defaults.icon),
+    circle: {
+        type: ControlType.Boolean,
+        title: "Circle",
+        defaultValue: defaultProps.circle,
+    },
+    ...iconControls(defaultProps.icon),
 })

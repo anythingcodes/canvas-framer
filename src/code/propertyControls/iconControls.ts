@@ -1,4 +1,4 @@
-import { featherIcons } from "../../../base"
+import { featherIcons } from "framer-base"
 import { ControlType, PropertyControls } from "framer"
 
 export function iconControls(

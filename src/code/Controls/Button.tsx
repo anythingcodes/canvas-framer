@@ -15,7 +15,7 @@ import { actions } from "../store/globalStore"
 import { extractEventHandlersFromProps } from "../utils/extractEventHandlersFromProps"
 
 const StyledButton = styled.button`
-    font-family: 'AvenirNext-DemiBold';
+    font-family: 'AvenirNext-DemiBold'; // TODO: pull out font from user selection
     cursor: pointer;
     line-height: 1;
     font-size: 14px;
