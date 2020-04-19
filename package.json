@@ -1,5 +1,5 @@
 {
-  "name": "framer-x-build-system",
+  "name": "canvas-framer",
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
@@ -41,7 +41,7 @@
     "webpack": "^4.12.2",
     "webpack-cli": "^3.0.8"
   },
-  "author": "Datadog DesignOps Team <slack@#designops>",
+  "author": "Liz Shaw",
   "license": "UNLICENSED",
   "dependencies": {
     "@types/classnames": "^2.2.6",
