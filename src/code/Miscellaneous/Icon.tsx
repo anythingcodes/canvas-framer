@@ -5,7 +5,7 @@ import {
   CircleIcon as BaseCircleIcon,
   CircleIconProps,
   themes,
-} from "framer-base";
+} from "../framer-base/dist"; // TODO: replace
 import { ControlType, addPropertyControls } from "framer";
 import {
   intentControls,
